@@ -9,13 +9,15 @@ header {
 
 .header-top a {
   display: inline-block;
-  padding: 9px 20px;
+  padding: 9px 0px;
   color: white;
   font-size: .65em;
 }
 
 .header-bottom {
   display: flex;
+  align-items: center;
+  padding: 17px;
 }
 
 #nav-logo {
@@ -27,13 +29,16 @@ header {
   border-top: 4px solid white;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  position: absolute;
-  top: 13px;
-  margin-left: 10px;
+  padding-bottom: 200px;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.container {
+  border: solid red 3px;
+  width: 1200px;
 }
