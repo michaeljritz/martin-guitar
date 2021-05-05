@@ -1,5 +1,35 @@
+header {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .header-top {
   background-color: #245c4f;
+  text-align: right;
+}
+
+.header-top a {
+  display: inline-block;
+  padding: 9px 20px;
+  color: white;
+  font-size: .65em;
+}
+
+.header-bottom {
+  display: flex;
+}
+
+#nav-logo {
+  width: 120px;
+}
+
+.dropdown-toggle:after {
+  content: "";
+  border-top: 4px solid white;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  position: absolute;
+  top: 13px;
+  margin-left: 10px;
 }
 
 * {
