@@ -2,35 +2,77 @@ header {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-.header-top {
+.header-top-full {
 	background-color: $green;
-	text-align: right;
+}
 
-	a {
-		display: inline-block;
-		padding: 9px 0px;
-		color: white;
-		font-size: .65em;
+.header-top {
+	display: flex;
+	justify-content: right;
+	padding: 9px 0px;
+	font-size: .65em;
+	color: white;
+
+	.header-top-support-container {
+		display: inline-flex;
+		align-items: center;
+		padding-left: 50px;
+		padding-right: 20px;
+
+		.header-top-toggle {
+			content: "";
+			border-top: 4px solid white;
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			margin-left: 10px;
+		}
 	}
 }
 
 .header-bottom {
 	display: flex;
-    align-items: center;
-    padding: 17px;
+	// justify-content: center;
+	// align-items: center;
+	padding: 18px 15px;
+	font-size: 1em;
+	background-color: white;
+	border-bottom: solid rgb(230, 230, 230) 1px;;
+
+	#nav-logo {
+		width: 135px;
+		padding-right: 15px
+	}
 }
 
-#nav-logo {
-	width: 120px;
+.nav-links {
+	flex: 1;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+
+	li {
+		// vertical-align: middle;
+		// height: 50%;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 1em;
+		color: rgb(80, 80, 80);
+	}
+
+	li:hover {
+		color: black;
+	}
 }
 
 
 
-.dropdown-toggle:after {
-	content: "";
-    border-top: 4px solid white;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    // position: relative;
-    padding-bottom: 200px;
+@media screen and (max-width: 900px) {
+
+	.header-top-full {
+		padding: 5px;
+	}
+
+	.header-top-container {
+		display: none;
+	}
 }
