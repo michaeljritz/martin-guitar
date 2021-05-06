@@ -2,26 +2,30 @@ header {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.header-top-full {
+.header-top {
   background-color: #245c4f;
 }
 
-.header-top {
+.header-top-content {
   display: flex;
   justify-content: right;
   padding: 9px 0px;
   font-size: .65em;
   color: white;
+  text-align: right;
 }
 
-.header-top .header-top-support-container {
-  display: inline-flex;
+.header-top-content a {
+  display: flex;
   align-items: center;
+}
+
+.header-top-content .header-top-support {
   padding-left: 50px;
   padding-right: 20px;
 }
 
-.header-top .header-top-support-container .header-top-toggle {
+.header-top-content .header-top-support::after {
   content: "";
   border-top: 4px solid white;
   border-left: 4px solid transparent;
@@ -29,42 +33,11 @@ header {
   margin-left: 10px;
 }
 
-.header-bottom {
-  display: flex;
-  padding: 18px 15px;
-  font-size: 1em;
-  background-color: white;
-  border-bottom: solid #e6e6e6 1px;
-}
-
-.header-bottom #nav-logo {
-  width: 135px;
-  padding-right: 15px;
-}
-
-.nav-links {
-  flex: 1;
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-}
-
-.nav-links li {
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 1em;
-  color: #505050;
-}
-
-.nav-links li:hover {
-  color: black;
-}
-
-@media screen and (max-width: 900px) {
-  .header-top-full {
+@media screen and (max-width: 1020px) {
+  .header-top {
     padding: 5px;
   }
-  .header-top-container {
+  .header-top-content {
     display: none;
   }
 }
@@ -75,7 +48,7 @@ header {
   box-sizing: border-box;
 }
 
-.row {
+.slim-row {
   max-width: 1440px;
   margin: auto;
 }
