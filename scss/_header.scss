@@ -8,11 +8,10 @@ header {
 
 .header-top-content {
 	display: flex;
-	justify-content: right;
+	justify-content: flex-end;
 	padding: 9px 0px;
 	font-size: .65em;
 	color: white;
-	text-align: right;
 
 	a {
 		display: flex;
@@ -44,6 +43,7 @@ header {
 
 .header-bottom-content {
 	display: flex;
+    padding: 0px 20px;
 }
 
 .header-bottom-column-1 {
