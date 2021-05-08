@@ -47,6 +47,19 @@
 	margin-left: 50px;
 }
 
+
+.button {
+	display: inline;
+	padding: 12px 20px;
+	background-color: $green;
+	font-size: .9rem;
+	letter-spacing: 2px;
+}
+
+.button:hover {
+	background-color: $dark-green;
+}
+
 @media screen and (max-width: 1150px) {
 	#header-menu-button {
 		display: flex;

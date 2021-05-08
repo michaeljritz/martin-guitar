@@ -47,6 +47,18 @@
   margin-left: 50px;
 }
 
+.button {
+  display: inline;
+  padding: 12px 20px;
+  background-color: #245c4f;
+  font-size: .9rem;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  background-color: #1a453b;
+}
+
 @media screen and (max-width: 1150px) {
   #header-menu-button {
     display: flex;
@@ -66,9 +78,9 @@
 
 .header-banner-content {
   font-family: 'Ubuntu', sans-serif;
-  font-size: .66rem;
+  font-size: .69rem;
   text-align: right;
-  padding: 9px 20px;
+  padding: 8px 20px 9px 20px;
   color: white;
 }
 
@@ -90,11 +102,6 @@
 #header-support:hover::after {
   border-top: none;
   border-bottom: 4px solid white;
-}
-
-.header-nav {
-  border-bottom: solid #e6e6e6 1px;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .header-nav-content {
@@ -121,6 +128,7 @@
   position: relative;
   display: inline-flex;
   align-items: center;
+  font-family: 'Ubuntu', sans-serif;
   font-size: .95rem;
   font-weight: 600;
   height: 100%;
@@ -219,8 +227,42 @@
 
 .even-columns {
   display: flex;
+  height: 720px;
 }
 
 .even-columns > * {
   width: 100%;
+}
+
+.even-column-img {
+  background-image: url("/img/photos/customShop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.even-column-info {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+
+.column-info {
+  max-width: 700px;
+  padding: 150px 40px 0px 50px;
+}
+
+.column-info h1 {
+  letter-spacing: 2px;
+}
+
+.column-info p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.7rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
