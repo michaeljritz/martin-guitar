@@ -1,5 +1,6 @@
 header {
 	font-family: 'Ubuntu', sans-serif;
+	overflow: hidden;
 }
 
 .header-top {
@@ -44,6 +45,15 @@ header {
 .header-bottom-content {
 	display: flex;
     padding: 0px 20px;
+}
+
+.header-hamburger {
+	display: none;
+
+	img {
+		width: 20px;
+		height: 20px;
+	}
 }
 
 .header-bottom-column-1 {
@@ -164,7 +174,7 @@ header {
 }
 
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1150px) {
 
 	.header-top {
 		padding: 5px;
@@ -174,7 +184,34 @@ header {
 		display: none;
 	}
 
-	#header-nav-links {
+	.header-bottom-content {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.header-bottom-column-1 {
+		justify-content: center;
+	}
+
+	.header-hamburger {
+		display: flex;
+		align-items: center;
+	}
+
+	.header-bottom-column-1 {
+		flex: 1;
+	}
+
+	.header-bottom-column-2 {
 		display: none;
 	}
+
+	.header-bottom-column-3 {
+		display: none;
+	}
+
+	.header-account-button {
+		display: none;
+	}
+
 }
