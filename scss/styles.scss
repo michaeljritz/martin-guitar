@@ -1,5 +1,5 @@
 @import 'colors';
-@import 'button';
+@import 'buttons';
 @import 'header';
 
 * {
@@ -11,8 +11,17 @@
 .slim-row {
 	max-width: 1440px;
 	margin: auto;
+	overflow: hidden;
 }
 
 .hide {
 	display: none;
+}
+
+.even-columns {
+	display: flex;
+}
+
+.even-columns > * {
+	width: 100%;
 }
