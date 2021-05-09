@@ -59,6 +59,17 @@
   background-color: #1a453b;
 }
 
+.carousel-button {
+  width: 20px;
+  margin: 0px 2px;
+  border: solid white 1px;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  border-color: #245c4f;
+}
+
 @media screen and (max-width: 1150px) {
   #header-menu-button {
     display: flex;
@@ -209,6 +220,123 @@
   }
 }
 
+@media screen and (max-width: 770px) {
+  .header-nav-content {
+    height: 60px;
+  }
+  .header-nav-logo > img {
+    width: 110px;
+  }
+}
+
+.even-columns {
+  display: flex;
+  height: 720px;
+}
+
+.even-columns > * {
+  width: 100%;
+}
+
+.even-column-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.even-column-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+
+.column-info {
+  max-width: 610px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+
+.column-info h1 {
+  letter-spacing: 2px;
+}
+
+.column-info p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.7rem;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.carousel-buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#column-image-custom-shop {
+  background-image: url("/img/photos/custom-shop.jpg");
+}
+
+#column-image-performer {
+  background-image: url("/img/photos/performer.jpg");
+}
+
+#column-image-ukulele {
+  background-image: url("/img/photos/ukulele.jpg");
+}
+
+#column-image-david-gilmour {
+  background-image: url("/img/photos/david-gilmour.jpg");
+}
+
+#column-image-luthier {
+  background-image: url("/img/photos/luthier.jpg");
+}
+
+@media screen and (max-width: 1024px) {
+  .even-columns {
+    height: 480px;
+  }
+  .even-column-info {
+    font-size: 1rem;
+  }
+  .column-info {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+  }
+  .column-info p {
+    font-size: .9rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #asdf {
+    display: block;
+    width: 100%;
+  }
+  #column-image-custom-shop {
+    background-image: none;
+  }
+  .column-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -223,46 +351,4 @@
 
 .hide {
   display: none;
-}
-
-.even-columns {
-  display: flex;
-  height: 720px;
-}
-
-.even-columns > * {
-  width: 100%;
-}
-
-.even-column-img {
-  background-image: url("/img/photos/customShop.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.even-column-info {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 1.75rem;
-  text-transform: uppercase;
-  background-color: black;
-  color: white;
-}
-
-.column-info {
-  max-width: 700px;
-  padding: 150px 40px 0px 50px;
-}
-
-.column-info h1 {
-  letter-spacing: 2px;
-}
-
-.column-info p {
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  line-height: 1.7rem;
-  margin-top: 5px;
-  margin-bottom: 20px;
 }

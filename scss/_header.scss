@@ -145,3 +145,14 @@
 	}
 
 }
+
+
+@media screen and (max-width: 770px) {
+	.header-nav-content {
+		height: 60px;
+	}
+
+	.header-nav-logo > img {
+		width: 110px;
+	}
+}

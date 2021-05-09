@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'buttons';
 @import 'header';
+@import 'even-column';
 
 * {
     padding: 0;
@@ -16,51 +17,4 @@
 
 .hide {
 	display: none;
-}
-
-.even-columns {
-	display: flex;
-	height: 720px;
-}
-
-.even-columns > * {
-	width: 100%;
-}
-
-.even-column-img {
-	background-image: url('/img/photos/customShop.jpg');
-	background-size: cover;
-	background-position: center;	
-}
-
-.even-column-info {
-	display: flex;
-	flex-direction: column;
-	font-family: 'Fjalla One', sans-serif;
-	font-size: 1.75rem;
-	text-transform: uppercase;
-	background-color: black;
-	color: white;
-}
-
-
-
-.column-info {
-	max-width: 700px;
-	padding: 150px 40px 0px 50px;
-
-	h1 {
-		letter-spacing: 2px;
-	}
-
-	p {
-		font-size: 1.1rem;
-		letter-spacing: 1px;
-		line-height: 1.7rem;
-		margin-top: 5px;
-		margin-bottom:20px;
-	}
-
-	
-
 }
